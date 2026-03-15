@@ -2,7 +2,7 @@
 
 internal class Program
 {
-    static void Main(string[] args)
+    static int Main(string[] args)
     {
         try
         {
@@ -12,9 +12,10 @@ internal class Program
         }
         catch (Exception e)
         {
-            if (e is not (Tomlyn.TomlException or ProgramException)) throw;
             Console.Error.Write(e.Message);
+            return e is Tomlyn.TomlException or ProgramException ? 1 : 2;
         }
-        
+
+        return 0;
     }
 }
