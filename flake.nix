@@ -17,7 +17,7 @@
                 src = ./.;
 
                 projectFile = "./SixSlime.AxiomKeydGen.csproj";
-                nugetDeps = ./deps.nix;
+                nugetDeps = ./deps.json;
 
                 dotnet-sdk = pkgs.dotnetCorePackages.sdk_8_0;
 
