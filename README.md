@@ -1,3 +1,3 @@
 > Part of [BAROS](https://github.com/sixslime/BAROS).
 
-A personal utility that creates a [keyd](https://github.com/rvaiya/keyd) config based off of a toml spec; designed to be used as a nix derivation.
+A personal utility that generates [keyd](https://github.com/rvaiya/keyd) configuration using toml; designed to be used as a nix derivation.
